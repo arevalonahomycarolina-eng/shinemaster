@@ -23,14 +23,10 @@ function prevSlide() {
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
-const toggleBtn = document.createElement("div");
-toggleBtn.className = "menu-toggle";
-toggleBtn.textContent = "☰";
-document.querySelector(".nav").appendChild(toggleBtn);
-
+const menuBurguer = document.getElementById("menuBurguer");
 const navLinks = document.querySelector(".nav-links");
 
-toggleBtn.addEventListener("click", () => {
+menuBurguer.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
